@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="第 1 页" id="Skwe0buN1VDlV5Pr2Fpp">
-    <mxGraphModel dx="440" dy="413" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="708" dy="1114" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -75,6 +75,11 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-84" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="qNVe5_VQKZbHT0BbcTsc-23" source="q8A6Jre_Dmv5E1ko5mhS-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="-80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="q8A6Jre_Dmv5E1ko5mhS-40" value="进程和程序有什么关系和区别" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="qNVe5_VQKZbHT0BbcTsc-23" vertex="1">
           <mxGeometry x="175" y="40" width="110" height="30" as="geometry" />
         </mxCell>
@@ -115,8 +120,8 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="q8A6Jre_Dmv5E1ko5mhS-51" value="进程的调度：进程控制块" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="qNVe5_VQKZbHT0BbcTsc-23" vertex="1">
-          <mxGeometry x="185" y="200" width="90" height="30" as="geometry" />
+        <mxCell id="q8A6Jre_Dmv5E1ko5mhS-51" value="进程的调度：进程控制块（PCB）" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="qNVe5_VQKZbHT0BbcTsc-23" vertex="1">
+          <mxGeometry x="185" y="200" width="105" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qNVe5_VQKZbHT0BbcTsc-42" value="" style="group" vertex="1" connectable="0" parent="qNVe5_VQKZbHT0BbcTsc-54">
           <mxGeometry x="190" y="300" width="290" height="230" as="geometry" />
@@ -265,8 +270,77 @@
         <mxCell id="qNVe5_VQKZbHT0BbcTsc-48" value="CPU上下文" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="qNVe5_VQKZbHT0BbcTsc-52">
           <mxGeometry x="189" y="110" width="74" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qNVe5_VQKZbHT0BbcTsc-55" value="进程是动态的，是程序的一次执行过程，同一个程序多次执行会对应多个进程" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="570" y="220" width="120" height="60" as="geometry" />
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-57" value="运行态&lt;div&gt;就绪态&lt;/div&gt;&lt;div&gt;阻塞态&lt;/div&gt;&lt;div&gt;创建态&lt;/div&gt;&lt;div&gt;终止态&lt;/div&gt;&lt;div&gt;阻塞挂起状态&lt;/div&gt;&lt;div&gt;就绪挂起状态&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="200" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-59" value="" style="group;strokeColor=default;strokeWidth=2;" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="414" y="100" width="270" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-55" value="进程是&lt;font style=&quot;font-size: 12px;&quot;&gt;动态&lt;/font&gt;的，是程序的一次执行过程，同一个程序多次执行会对应多个进程" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="qNVe5_VQKZbHT0BbcTsc-59">
+          <mxGeometry width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-56" value="程序是静态的，就是存放在磁盘里的可执行文件，是一系列的指令集合" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="qNVe5_VQKZbHT0BbcTsc-59">
+          <mxGeometry x="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-61" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8A6Jre_Dmv5E1ko5mhS-42" target="qNVe5_VQKZbHT0BbcTsc-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-62" value="文本段&lt;div&gt;栈&lt;/div&gt;&lt;div&gt;数据段&lt;/div&gt;&lt;div&gt;堆&lt;/div&gt;&lt;div&gt;SP&lt;/div&gt;&lt;div&gt;PC&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="310" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-63" value="&lt;span style=&quot;font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, &amp;quot;PingFang SC&amp;quot;, &amp;quot;Hiragino Sans GB&amp;quot;, &amp;quot;Microsoft YaHei UI&amp;quot;, &amp;quot;Microsoft YaHei&amp;quot;, &amp;quot;Source Han Sans CN&amp;quot;, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; text-align: start; background-color: rgb(253, 253, 254);&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;进程的并发是指一组进程在执行时间上存在重叠的现象。&lt;/font&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="400" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-64" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8A6Jre_Dmv5E1ko5mhS-46" target="qNVe5_VQKZbHT0BbcTsc-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-65" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8A6Jre_Dmv5E1ko5mhS-48" target="qNVe5_VQKZbHT0BbcTsc-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-67" value="线程之间可以并发运行且共享相同的地址空间" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-68" value="线程是进程当中的一条执行流程" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-69" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-35" target="qNVe5_VQKZbHT0BbcTsc-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-70" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-26" target="qNVe5_VQKZbHT0BbcTsc-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-71" value="线程是调度的基本单位，而进程则是资源拥有的基本单位；线程是进程的一个运行实体" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="575" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-72" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-30" target="qNVe5_VQKZbHT0BbcTsc-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-73" value="同一进程：类似进程上下文切换；&lt;div&gt;不同进程：只切换线程的私有数据&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;direction=south;" vertex="1" parent="1">
+          <mxGeometry x="555" y="665" width="90" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-74" value="用户线程&lt;div&gt;内核线程&lt;/div&gt;&lt;div&gt;轻量级进程&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-75" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-32" target="qNVe5_VQKZbHT0BbcTsc-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-76" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-34" target="qNVe5_VQKZbHT0BbcTsc-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-77" value="先来先服务算法&lt;div&gt;最短作业优先调度算法&lt;/div&gt;&lt;div&gt;高响应比优先调度算法&lt;/div&gt;&lt;div&gt;时间片轮转调度算法&lt;/div&gt;&lt;div&gt;最高优先级调度算法&lt;/div&gt;&lt;div&gt;多级反馈队列调度算法&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="820" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-78" value="进程上下文切换&lt;div&gt;线程上下文切换&lt;/div&gt;&lt;div&gt;中断上下文切换&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="960" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-80" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-46" target="qNVe5_VQKZbHT0BbcTsc-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-81" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qNVe5_VQKZbHT0BbcTsc-48" target="qNVe5_VQKZbHT0BbcTsc-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qNVe5_VQKZbHT0BbcTsc-82" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="q8A6Jre_Dmv5E1ko5mhS-35" target="qNVe5_VQKZbHT0BbcTsc-55">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
